@@ -10,17 +10,17 @@ export class ListarPensamentoComponent implements OnInit {
   listaPensamentos = [
     {
       conteudo: ' quassssslquer coisa de conteudo1212',
-      autoria: 'Breno',
-      modelo: 'modelo3',
+      autoria: 'Breno1',
+      modelo: 'modelo1',
     },
     {
       conteudo: ' quassssslquer coisa de conteudo1212',
-      autoria: 'Breno',
-      modelo: 'modelo3',
+      autoria: 'Breno2',
+      modelo: 'modelo2',
     },
     {
       conteudo: ' quassssslquer coisa de conteudo1212',
-      autoria: 'Breno',
+      autoria: 'Breno3',
       modelo: 'modelo3',
     },
   ];

@@ -3,10 +3,15 @@
     <h2 class="ff-inter">Meu Mural</h2>
     <button routerLink="/criarPensamento" class="botao">Adicionar um pensamento kantiano</button>
   </header>
-  <div class="mural">
+  <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos">
     <div *ngFor="let pensamento of listaPensamentos">
-<!--      property bind-->
+<!--property bind-->
       <app-pensamento [pensamento]="pensamento"></app-pensamento>
     </div>
   </div>
-</section>
+</section  >
+<ng-template #semPensamentos>
+  <div  class="ff-inter sem-pensamentos">
+  <p>AINDA NAO HÁ PENSAMENTOS CADASTRADOS. ADICIONE UM PENSAMENTO!</p>
+  </div>
+</ng-template>
