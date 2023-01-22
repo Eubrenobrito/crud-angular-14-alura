@@ -10,7 +10,7 @@
       id="pensamento"
       name="pensamento"
       placeholder="Digite o pensamento"
-      [(ngModel)]="pensamento.conteudo"
+      [(ngModel)]="pensamentoPai.conteudo"
     >
     <label for="autoria">Autoria ou fonte</label>
     <input
@@ -19,7 +19,7 @@
       id="autoria"
       name="autoria"
       placeholder="Digite a autoria ou fonte"
-      [(ngModel)]="pensamento.autoria"
+      [(ngModel)]="pensamentoPai.autoria"
 
     >
     <label>Selecione o modelo do card:</label>
@@ -31,7 +31,7 @@
             id="modelo1"
             value="modelo1"
             name="modelo-card"
-            [(ngModel)]="pensamento.modelo"
+            [(ngModel)]="pensamentoPai.modelo"
 
           >
           <div class="custom-radio">
@@ -42,8 +42,8 @@
         Prévia:
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/imagens/modelo1.png" alt="Aspas azuis">
-          <p class="conteudo">{{ pensamento.conteudo }}</p>
-          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+          <p class="conteudo">{{ pensamentoPai.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamentoPai.autoria }}</b></p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@
             id="modelo2"
             value="modelo2"
             name="modelo-card"
-            [(ngModel)]="pensamento.modelo"
+            [(ngModel)]="pensamentoPai.modelo"
 
           >
           <div class="custom-radio">
@@ -65,8 +65,8 @@
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
           <img src="../../../../assets/imagens/modelo2.png" alt="Aspas azul claro">
-          <p class="conteudo">{{ pensamento.conteudo }}</p>
-          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+          <p class="conteudo">{{ pensamentoPai.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamentoPai.autoria }}</b></p>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
             id="modelo3"
             value="modelo3"
             name="modelo-card"
-            [(ngModel)]="pensamento.modelo"
+            [(ngModel)]="pensamentoPai.modelo"
 
           >
           <div class="custom-radio">
@@ -88,8 +88,8 @@
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/imagens/modelo3.png" alt="Aspas verdes">
-          <p class="conteudo">{{ pensamento.conteudo }}</p>
-          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+          <p class="conteudo">{{ pensamentoPai.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamentoPai.autoria }}</b></p>
         </div>
       </div>
     </div>

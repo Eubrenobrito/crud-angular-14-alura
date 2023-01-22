@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPensamentoComponent implements OnInit {
 
-  pensamento = {
+  pensamentoPai = {
     id: '1',
     conteudo:'Aprendendo angular',
     autoria: 'dev',
