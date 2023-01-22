@@ -19,7 +19,7 @@ export class ListarPensamentoComponent implements OnInit {
       modelo: 'modelo2',
     },
     {
-      conteudo: ' quassssslquer coisa de conteudo1212',
+      conteudo: ' quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212',
       autoria: 'Breno3',
       modelo: 'modelo3',
     },
