@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {PensamentoEntity} from "../pensamento-entity";
 
 @Component({
   selector: 'app-pensamento',
@@ -7,8 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PensamentoComponent implements OnInit {
 
- @Input() pensamento = {
-    conteudo: ' qualquer coisa de conteudo2222222',
+ @Input() pensamento: PensamentoEntity = {
+   id:0,
+   conteudo: ' qualquer coisa de conteudo2222222',
     autoria: 'Breno',
     modelo: 'modelo3',
   }

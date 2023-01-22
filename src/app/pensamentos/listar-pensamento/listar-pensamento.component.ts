@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PensamentoEntity} from "../pensamento-entity";
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -7,23 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentoComponent implements OnInit {
 
-  listaPensamentos = [
-    {
-      conteudo: ' quassssslquer coisa de conteudo1212',
-      autoria: 'Breno1',
-      modelo: 'modelo1',
-    },
-    {
-      conteudo: ' quassssslquer coisa de conteudo1212',
-      autoria: 'Breno2',
-      modelo: 'modelo2',
-    },
-    {
-      conteudo: ' quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212 quassssslquer coisa de conteudo1212',
-      autoria: 'Breno3',
-      modelo: 'modelo3',
-    },
-  ];
+  listaPensamentos: PensamentoEntity[] = [];
 
   constructor() { }
 
