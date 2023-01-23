@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PensamentoEntity} from "../pensamento-entity";
+import {PensamentoService} from "../pensamento.service";
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -10,9 +11,13 @@ export class ListarPensamentoComponent implements OnInit {
 
   listaPensamentos: PensamentoEntity[] = [];
 
-  constructor() { }
+  constructor( private service:PensamentoService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.service.listar().subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos
+    })
   }
+
 
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PensamentoEntity} from "../pensamento-entity";
+import {PensamentoService} from "../pensamento.service";
+import { Routes, RouterModule, Router } from '@angular/router'; // CLI imports router
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -9,19 +11,23 @@ import {PensamentoEntity} from "../pensamento-entity";
 export class CriarPensamentoComponent implements OnInit {
 
   pensamentoPai: PensamentoEntity = {
-    id: 1,
-    conteudo:'Aprendendo angular',
-    autoria: 'dev',
+    conteudo:'',
+    autoria: '',
     modelo: ''
   }
 
-  constructor() { }
+  constructor(
+    private service: PensamentoService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
   criarPensamento() {
-    alert('dsada')
+    this.service.criar(this.pensamentoPai).subscribe(()=>{
+      this.router.navigate(['/listarPensamento'])
+    })
   }
 
   cancelar() {
