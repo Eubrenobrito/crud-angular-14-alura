@@ -11,9 +11,7 @@ export class PensamentoService {
 
   private readonly API = 'http://localhost:3000/pensamentos';
 
-  constructor(private http: HttpClient,
-              private router: Router,
-  ) { }
+  constructor(private http: HttpClient) { }
 
   listar():Observable<PensamentoEntity[]> {
     return this.http.get<PensamentoEntity[]>(this.API)
