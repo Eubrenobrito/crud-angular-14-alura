@@ -12,6 +12,11 @@ export class PensamentoService {
 
   constructor(private http: HttpClient) { }
 
+  editar(pensamento:PensamentoEntity): Observable<PensamentoEntity>{
+    const url = `${this.API}/${pensamento.id}`
+    return this.http.put<PensamentoEntity>(url, pensamento)
+  }
+
   listar():Observable<PensamentoEntity[]> {
     return this.http.get<PensamentoEntity[]>(this.API)
   }
@@ -21,7 +26,7 @@ export class PensamentoService {
   }
 
   excluir(id:number): Observable<PensamentoEntity>{
-    const url= `${this.API}/${id}`;
+    const url = `${this.API}/${id}`;
     return this.http.delete<PensamentoEntity>(url);
   }
 
